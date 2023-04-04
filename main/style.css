@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+h1{
+    font-size: 90px;
+}
+button{
+    width: 300px;
+    height: 150px;
+    background-color: green;
+    font-size: 40px;
+    color: blueviolet
+}
