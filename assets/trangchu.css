@@ -1,0 +1,138 @@
+.main__background{
+    height: 445px;
+    background-image: url('../image/coffeebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__background{
+    padding: 0px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Hover for mui ten */
+.main__background:hover .icon-muiten{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* CSS for main-title */
+.main-title{
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 130px;
+
+    padding-top: 30px;
+    box-sizing: border-box;
+    background-image: linear-gradient(90deg, #C7BD9A, #FCF9F2);
+}
+
+.main-title h2{
+    color: #5A280E;
+    margin-bottom: 20px;
+}
+
+.main-title__p1{
+    color: #5A280E;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+
+/* CSS for cac the p */
+
+.main-title__p2{
+    color: #5A280E;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.btn-dangky{
+    width: 170px;
+    height: 40px;
+    background-color: #5A280E;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* main-reason */
+.main-reason{
+    height: 700px;
+    display: flex;
+    position: relative;
+}
+
+.main-reason-item{
+    width: 50%;
+    height: 100%;
+}
+
+/* CSS for reason left */
+.main-reason-left{
+    background-image: url('../image/coffeereason2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* CSS for reason right */
+
+.main-reason-right{
+    background-image: url('../image/coffereason1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.main-reason-right h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.main-reason-right p{
+    margin-bottom: 20px;
+}
+
+.main-reason-right__item{
+    color: #ffffff;
+}
+
+/* ADD icon item vao reason */
+
+.main-reason-content{
+    height: 80%;
+    position: absolute;
+    left: 47.05%;
+    top: 120px;
+
+}
+.reason__box{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+
+}
+.reason__box img{
+    width: 75px;
+    height: 80px;
+}
+.reason__box p{
+    font-weight: 700;
+}
+
+.main__products{
+    height:  470px;
+}

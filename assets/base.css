@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    border: none;
 }
 
 a{
@@ -186,4 +187,54 @@ a{
 }
 .header-top__call__giohang:hover i{
     color: #ffffff;
+}
+
+.icon-muiten{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 25px;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+/* CSS for line item */
+
+.item--line{
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.line{
+    width: 80px;
+    height: 2px;
+    background-color: grey;
+    display: inline-block;
+}
+
+.square{
+    width: 18px;
+    height: 18px;
+    border: 3px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+}
+.subsquare{
+    width: 50%;
+    height: 50%;
+    border: 3px solid grey;
+    /* transform: rotate(45deg); */
+    box-sizing: border-box;
+
 }
