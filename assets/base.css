@@ -11,7 +11,7 @@ a{
 /* CSS cho main-container */
 .main-container{
     width: calc(100% - 80px);
-    height: 2000px;
+    height: 3000px;
     background-color: #F9F9F9;
     margin: auto;
     position: relative;
@@ -27,6 +27,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 100;
 }
 .zalo-facebook-hotline__chatzalo{
     width: 110px;
@@ -188,6 +189,8 @@ a{
 .header-top__call__giohang:hover i{
     color: #ffffff;
 }
+
+/* CSs for mui ten */
 
 .icon-muiten{
     width: 50px;

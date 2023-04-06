@@ -1,3 +1,4 @@
+
 .main__background{
     height: 445px;
     background-image: url('../image/coffeebg.jpg');
@@ -16,6 +17,16 @@
 .main__background:hover .icon-muiten{
     opacity: 1;
     transition: 0.5s;
+}
+.main__background:hover .icon-muiten-left{
+    transition: 0.5s;
+    position: relative;
+   left: -10px;
+}
+.main__background:hover .icon-muiten-right{
+    transition: 0.5s;
+    position: relative;
+    right: -10px;
 }
 
 /* CSS for main-title */
@@ -133,6 +144,191 @@
     font-weight: 700;
 }
 
+/* CSS for products */
 .main__products{
     height:  470px;
+    background-image: linear-gradient(-180deg, #B3742F, #DEB468);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.main__products__title{
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #5A280E;
+}
+
+/* CSS for product items */
+.main__products__items{
+    width: 1050px;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__product{
+    width: 23.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.item__product img{
+    width: 100%;
+    height: 80%;
+}
+
+.item__product p:last-child{
+    color: red;
+    font-weight: 700;
+}
+
+/* Đăng ký tư vấn */
+.main-dangkytuvan{
+    height: 570px;
+    background-image: url('../image/coffeebg.jpg');
+    position: relative;
+    display: flex;
+}
+/* Khoi bao phu, opacity */
+.background--baophu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.2;
+}
+/* Tao div content chua noi dung, ghi de lop bao phu */
+.main-dangkytuvan__content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    right: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-dangkytuvan-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* css for the h2 */
+.main-dangkytuvan__title{
+    font-size: 20px;
+    margin: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.main-dangkytuvan-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+/* CSS for avatar */
+.avatar{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 41px;
+}
+.avatar img{
+    border-radius: 40px;
+    width: 100%;
+}
+.star--transparent{
+    margin-top: 16px;
+    width: 200px;
+}
+/* Person gom cac thong tin ve avatar */
+.person{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authorname{
+    color: #ffffff;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px ;
+    margin: 10px;
+}
+
+.person__ghichu{
+    color: #ffffff;
+    font-style: italic;
+    text-align: center;
+}
+
+.main-dangkytuvan-left__item{
+    color: #ffffff;
+    margin-bottom: 50px;
+    margin: 20px auto;
+}
+
+/* CSS for the input */
+.ip__tencuaban{
+    width: 100%;
+    height: 35px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.birthday{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthday-select{
+    width: 30%;
+    height: 40px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.main-dangkytuvan-right__label{
+    display: block;
+    font-size: 17px;
+    color: #ffffff;
+    margin: 10px 0px;
+    font-weight: 800;
+}
+.input__text{
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+}
+
+/* CSS for button */
+.btndktv{
+    font-size: 17px;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: #F1C40F;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+/* css for luu y */
+.luuy{
+    color: #ffffff;
+    font-style: italic;
+}
+
