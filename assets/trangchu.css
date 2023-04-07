@@ -332,3 +332,148 @@
     font-style: italic;
 }
 
+/* CSS for main uytin san pham */
+.main-uytin{
+    height: 345px;
+    background-image: url('../image/bghouse.jpg');
+    position: relative;
+}
+/* Lop phu back ground */
+.opacity-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #BD986B;
+    opacity: 0.3;
+}
+.main-uytin__main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+.main-uytin-content{
+    padding: 50px 130px;
+    box-sizing: border-box;
+    width: 60%;
+
+}
+
+.main-uytin-content__h2{
+    text-align: center;
+    font-size: 27px;
+    color: #34495E;
+}
+
+.main-uytin-content p{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-style: italic;
+    color: #34495E;
+    font-weight: 700;
+}
+
+.main-uytin-content p span:last-child{
+    color: #EAE3D1;
+    opacity: 0.5;
+}
+
+
+
+.main-uytin-bg{
+    width: 40%;
+    height: 100%;
+    background-image: url('../image/tuivaicaphe.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+/* CSs for dich vu */
+
+.main-dichvu{
+    height: 110px;
+    background-color: #5A280E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-dichvu_box{
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 24%;
+    color: #ffffff;
+}
+
+.main-dichvu_box img{
+    width: 60px;
+    height: 45px;
+    margin-right: 8px;
+}
+
+.main-dichvu_box p span:first-child{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+
+/* CSS for dia chi */
+.main-diachi{
+    height: 245px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-diachi-box{
+    width: 26%;
+    height: 200px;
+}
+
+.main-diachi-box h5{
+    color: #5A280E;
+    margin-bottom: 10px;
+}
+
+.main-diachi-box__video,.main-diachi-box__video iframe{
+    width: 90%;
+    height: 170px;
+}
+
+/* css for footer */
+.main-footer{
+    height: 50px;
+    background-color: #5B5B5B;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-footer p{
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 100px;
+    box-sizing: border-box;
+    color: #ADADAD;
+
+}
+/* css for mui ten len */
+.muitenup{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.muitenup .muitenup-icon{
+    opacity: 1;
+    scale: 0.7;
+    transform: rotate(90deg);
+}

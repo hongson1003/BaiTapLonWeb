@@ -11,7 +11,7 @@ a{
 /* CSS cho main-container */
 .main-container{
     width: calc(100% - 80px);
-    height: 3000px;
+    height: 4000px;
     background-color: #F9F9F9;
     margin: auto;
     position: relative;
@@ -239,5 +239,14 @@ a{
     border: 3px solid grey;
     /* transform: rotate(45deg); */
     box-sizing: border-box;
+}
 
+/* CSS 2 hinh tron trong avart infor */
+.circle-item{
+    width: 10px;
+    height: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 4px;
 }
