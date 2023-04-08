@@ -77,3 +77,20 @@
 .main-tintuc-noidung img{
     width: 270px;
 }
+.main-tieude{
+    margin-left: 56px;
+}
+.main-tieude-img{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.main-tieude-img img{
+    width: 1340px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.main-noidung{
+    margin-top: 20px;
+    margin-left: 75px;
+    font-size: 20px;
+}
