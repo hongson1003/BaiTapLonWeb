@@ -11,8 +11,8 @@ a{
 /* CSS cho main-container */
 .main-container{
     width: calc(100% - 80px);
-    /* height: 4000px; */
-    background-color: #F9F9F9;
+    height: 4000px;
+    /* background-color: #F9F9F9; */
     margin: auto;
     position: relative;
 }
@@ -249,4 +249,63 @@ a{
     border-radius: 8px;
     display: inline-block;
     margin: 4px;
+}
+
+
+/* CSS for dia chi */
+.main-diachi{
+    height: 245px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-diachi-box{
+    width: 26%;
+    height: 200px;
+}
+
+.main-diachi-box h5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    color: #5A280E;
+    margin-bottom: 10px;
+}
+
+.main-diachi-box__video,.main-diachi-box__video iframe{
+    width: 100%;
+    height: 170px;
+}
+
+/* css for footer */
+.main-footer{
+    height: 50px;
+    background-color: #5B5B5B;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-footer p{
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 100px;
+    box-sizing: border-box;
+    color: #ADADAD;
+
+}
+/* css for mui ten len */
+.muitenup{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.muitenup .muitenup-icon{
+    opacity: 1;
+    scale: 0.7;
+    transform: rotate(90deg);
 }
