@@ -11,7 +11,7 @@ a{
 /* CSS cho main-container */
 .main-container{
     width: calc(100% - 80px);
-    height: 4000px;
+    /* height: 4000px; */
     background-color: #F9F9F9;
     margin: auto;
     position: relative;
