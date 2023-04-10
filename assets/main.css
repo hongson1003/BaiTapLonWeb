@@ -13,7 +13,7 @@
     position: relative;
     margin-top: 50px;
     margin-left: 56px;
-    margin-right: 146px;
+    /* margin-right: 146px; */
     margin-bottom: 100px;
 }
 .main-contact{
@@ -44,12 +44,13 @@
 }
 .main-tintuc{
     display: grid;
-    margin-left: 250px;
+    margin-left: 200px;
    grid-template-areas: "A B C " ;
    grid-template-rows: "D";
    row-gap: 30px;
     width: fit-content;
   column-gap: 40px;
+  margin-top: 30px;
   
 }
 .main-tintuc-noidung{
@@ -92,5 +93,66 @@
 .main-noidung{
     margin-top: 20px;
     margin-left: 75px;
+    font-size: 20px;
+}
+.main-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.img-title-sale img{
+    width: 300px;
+    height: 80px;
+}
+.main-sanpham{
+    display: grid;
+    margin-top: 30px;
+    grid-template-areas: "A B C" "D E F" "G H K";
+    column-gap: 40px;
+    row-gap: 40px;
+    width: fit-content;
+    margin-left: 270px;
+}
+.main-sanpham-chitiet{
+    border: 3px solid  rgb(238,237,237);
+    width: fit-content;
+    background-color: rgb(248,246,246);
+}
+.main-sanpham-chitiet img{
+    width: 270px;
+}
+.main-sanpham-giathanh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color{
+    color: red;
+}
+.choice{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black ;
+    border-radius : 3px;
+    
+}
+.main-xemthem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 210px;
+    height: 40px;
+    margin-left: 610px;
+    border: 1px solid rgb(217,217,217);
+    background-color: rgb(217,217,217);
+    padding-top: 10px;
+}
+.main-xemthem span{
+    font-size: 25px;
+}
+.main-chonsanpham span,option{
     font-size: 20px;
 }
