@@ -1,311 +1,136 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    border: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
 }
 
-a{
-    text-decoration: none;
+/* CSS for Main */
+.main{
+    width: 95%;
+    padding: 0;
 }
-
-/* CSS cho main-container */
-.main-container{
-    width: calc(100% - 80px);
-    height: 4000px;
-    /* background-color: #F9F9F9; */
-    margin: auto;
-    position: relative;
-}
-
-/* CSS for Fixed fb-zalo-hotline */
-.zalo-facebook-hotline{
-    position: fixed;
-    width: 200px;
-    height: 135px;
-    bottom: 20px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 100;
-}
-.zalo-facebook-hotline__chatzalo{
-    width: 110px;
-    background-color: #8EB22B;
-}
-.zalo-facebook-hotline__chatfb{
-    width: 150px;
-    background-color: #125C9E;
-}
-.zalo-facebook-hotline__hotline{
-    width: 90%;
-    background-color: #D11A59;
-}
-
-.zalo-facebook-hotline__item{
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    color: #ffffff;
-}
-
 /* CSS for header */
 .header{
-    height: 170px;
-
-}
-.header-top{
     height: 120px;
-    padding: 0px 150px;
-    box-sizing: border-box;
 }
-.header-bottom{
-    height: calc(100% - 120px);
-    background-image: linear-gradient(0, #984515, #5A280E);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* CSS cho thẻ p trong menu */
-.header-bottom__p{
-    text-transform: uppercase;
-    padding: 10px 20px;
-    font-size: 13px;
-    font-weight: 900;
-    color: #ffffff;
-}
-
-/* CSS dong dau tien trong the header-top */
-.header-top__chaomungqk{
-    height: 30px;
+.header-header{
+    height: 20%;
+    padding: 0px 12%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-}
-
-.header-top__chaomungqk__icons{
-    width: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.fa--header{
-    font-size: 12px;
-    color: #999999
-}
-
-.header-top__chaomungqk__welcome{
+    padding-top: 2px;
+    background-color: #F5F5F5;
     color: #777777;
-    font-size: 14px;
-    font-weight: 600;
+    font-weight: 650;
+    font-size: 12px;
 }
-/* CSS for logo */
-.header-top-logo{
+.header-header p i{
+    margin: 2px;
+}
+.header-banner{
+    padding: 0 12%;
+    height: 80%; 
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    background-color: #F9F9F9;
 }
-
-.header-top-logo__img img{
-    width: 78px;
+.header-banner__logo{
     height: 100%;
 }
-
-/* CSS for chuyen cung cap si */
-.header-top__content p{
-    color: #29ABE2;
-    font-weight: 800;
-    font-size: 13px;
+.logo{
+    height: 80%;
 }
-.header-top__content h3{
-    color: #5A280E;
-    margin-left: 25px;
+
+.header-banner__introduce{
+    padding: 10px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-weight: 700;
 }
-.header-top__content h2{
-    font-size: 18px;
-    color: #E67E22;
-    margin-left: 45px;
-    font-weight: 1000;
+.header-banner__introduce p{
+    font-size: 15px;
+    margin: 2px;
 }
-.header-top__content{
+.header-banner__introduce p:nth-child(1){
+    color: #3498DB;  
+}
+.header-banner__introduce p:nth-child(2){
+    color: #5A280E; 
+    padding-left: 40px;
+}
+.header-banner__introduce p:nth-child(3){
+    color: #E67E22; 
+    padding-left: 60px;
+}
+.header-banner__cart{
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-
-
-
-/* CSS for gio hang */
-.header-top__call__phone{
-    width: 75px;
-    height: 70px;
-}
-
-.header-top__call{
-    width: 270px;
-
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.header-top__call__sdt span{
-    font-size: 19px;
-    color: #FF0000;
-    font-weight: 800;
-}
-
-.header-top__call__giohang{
-    width: 60px;
-    height: 30px;
-    border-radius: 30px;
-    border: 1px solid #29ABE2;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
 }
-
-.header-top__call__giohang p{
-    color: red;
-    font-weight: 600;
+.header-banner__cart__phone{
+    height: 70%;
 }
-.fa-basket-shopping{
-    width: 20px;
-    height: 20px;
-    color: #29ABE2;
-}
-/* Hover for gio hang */
-.header-top__call__giohang:hover{
-    background-color: #29ABE2;
-}
-.header-top__call__giohang:hover p{
-    color: #ffffff;
-}
-.header-top__call__giohang:hover i{
-    color: #ffffff;
-}
-
-/* CSs for mui ten */
-
-.icon-muiten{
-    width: 50px;
-    height: 50px;
-    border: 2px solid #ffffff;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    border-radius: 25px;
-    opacity: 0;
-    transition: 0.5s;
-
-}
-
-/* CSS for line item */
-
-.item--line{
-    width: 250px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.line{
-    width: 80px;
-    height: 2px;
-    background-color: grey;
-    display: inline-block;
-}
-
-.square{
-    width: 18px;
-    height: 18px;
-    border: 3px solid grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(45deg);
-    box-sizing: border-box;
-}
-.subsquare{
-    width: 50%;
-    height: 50%;
-    border: 3px solid grey;
-    /* transform: rotate(45deg); */
-    box-sizing: border-box;
-}
-
-/* CSS 2 hinh tron trong avart infor */
-.circle-item{
-    width: 10px;
-    height: 10px;
-    border: 3px solid #ffffff;
-    border-radius: 8px;
-    display: inline-block;
-    margin: 4px;
-}
-
-
-/* CSS for dia chi */
-.main-diachi{
-    height: 245px;
-    background-color: #F4F4F4;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.main-diachi-box{
-    width: 26%;
-    height: 200px;
-}
-
-.main-diachi-box h5{
+.header-banner__cart__sdt{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    color: #5A280E;
-    margin-bottom: 10px;
 }
-
-.main-diachi-box__video,.main-diachi-box__video iframe{
-    width: 100%;
-    height: 170px;
+.header-banner__cart__sdt p{
+    margin: 0;
+    color: red;
+    font-weight: 700;
 }
-
-/* css for footer */
-.main-footer{
-    height: 50px;
-    background-color: #5B5B5B;
+.cart{
+    width: 70px;
+    height: 30px;
+    border: #3498DB solid 1px ;
+    border-radius: 40px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    position: relative;
 }
-
-.main-footer p{
+.header-banner__cart img, .header-banner__cart div{
+    margin: 0px 2px;
+}
+.cart i{
+    color: #3498DB;
+}
+.header-banner__cart__sdt p{
     font-size: 18px;
-    font-weight: 800;
-    padding-left: 100px;
-    box-sizing: border-box;
-    color: #ADADAD;
+}
+/* End header */
+
+
+/* Carousel and navbar */
+.navs-slide{
+    height: 500px;
+}
+.navs-slide-header{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5A280E;
+    padding: 0px 18%;
 
 }
-/* css for mui ten len */
-.muitenup{
-    position: absolute;
-    right: 0px;
-    top: 0px;
+
+.navs-slide-header p a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 750;
+    font-size: 14px;
+}
+.slideshow, .slideshow img{
+    height: 450px;
 }
 
-.muitenup .muitenup-icon{
-    opacity: 1;
-    scale: 0.7;
-    transform: rotate(90deg);
-}
+
+
