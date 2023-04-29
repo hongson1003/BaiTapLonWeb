@@ -5,9 +5,15 @@
 p{
     margin: 0;
 }
+:root{
+    --linelogo-color--white: #ffffff;
+    --linelogo-color--grey: grey;
+
+}
 
 /* CSS for Main */
 .main{
+    height: 2000px;
     width: 95%;
     padding: 0;
 }
@@ -131,6 +137,42 @@ p{
 .slideshow, .slideshow img{
     height: 450px;
 }
+/* Setup line logo */
+/*  ------ *------*------ */
+.line-logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    height: 10px;
+    margin: 15px;
+
+}
+.line-item{
+    background-color: var(--linelogo-color--white);
+    width: 50px;
+    height: 1px;
+}
+.line-logo i{
+    font-size: 7px;
+    color: var(--linelogo-color--white)
+}
+.line-quarter{
+    width:20px;
+    height: 20px;
+    border: 2px solid var(--linelogo-color--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+}
+.line-quarter div{
+    width:10px;
+    height: 10px;
+    border: 2px solid var(--linelogo-color--grey);
+}
+
+
 
 
 
