@@ -73,6 +73,6 @@ function nhanxetcuakhachhang(){
     renderSlide(avatar, ten, comments, client, cicleLeft, cicleRight);
     setInterval(function(){
         renderSlide(avatar, ten, comments, client, cicleLeft, cicleRight);
-    }, 2000);
+    }, 3000);
 }
 nhanxetcuakhachhang();

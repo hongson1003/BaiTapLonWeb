@@ -139,8 +139,16 @@
     z-index: 1;
 }
 .formtuvan{
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 50%;
     height: 100%;
+    z-index: 100;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .myclient-object{
     margin-top: 25px;
@@ -239,6 +247,84 @@
     background-color: black;
     opacity: 0.8;
 } 
-  
-  
+.mo{
+    opacity: 0.6;
+}
+.formtuvan form{
+    width: 80%;
+}
+.texttuvan{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* end khach hang */
+.uytin{
+    height: 345px;
+    background-image: url(../image/uytin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.box-content{
+    width: 600px;
+    height: 200px;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.box-content p:first-child{
+    font-size: 26px;
+    color: #34495E;
+    font-weight: 700;
+}
+.box-content p:nth-child(2){
+    font-size: 16px;
+    color: #34495E;
+    font-weight: 600;
+    font-style: italic;
+}
+.box-content p:last-child span:first-child{
+    color: #34495E;
+    font-weight: 600;
+}
+.box-content p:last-child span:last-child{
+    color: #E74C3C;
+    font-size: 18px;
+    font-weight: 600;
+}
+.box-content p{
+    margin: 20px 0px;
+}
+/* end uy tin */
+.dichvu{
+    height: 120px;
+    background-color: #5A280E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+.dichvu-item{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dichvu-item img{
+    width: 80px;
+    height: 60px;
+} 
+.dichvu-item div{
+    font-size: 13px;
+    font-weight: 670;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* end dich vu */
+
+
 
