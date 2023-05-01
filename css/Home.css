@@ -38,6 +38,15 @@
     color: #5A280E;
     font-size: 14px;
 }
+#register a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
 /* end */
 
 /* reason for choose */
@@ -53,7 +62,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 53%;
+    width: 100%;
     z-index: 10;
     color: #ffffff;
     display: flex;
@@ -94,6 +103,9 @@
     flex-direction: column;
     align-items: center;
 }
+.myproducts h4{
+    font-weight: 800;
+}
 .myproducts-content{
     margin: 0 auto;
     padding-top: 15px;
@@ -103,6 +115,13 @@
     flex-wrap: wrap;
     width: 80%;
 }
+.product-item p{
+    font-weight: 700;
+}
+.product-item p:last-child{
+    font-weight: 700;
+    color: brown;
+}
 
 .line-logo-products div{
     background-color: grey;
@@ -111,14 +130,20 @@
 .line-logo-products i{
     color: grey;
 }
-.mycart img{
+.mycart{
     width: 247px;
+}
+.mycart img{
+    width: 100%;
     height: 247px;
+}
+.myproducts h4{
+    color: #ffffff;
 }
 /* end */
 
 /* Nhan xet của khách hàng */
-.nhanxetkhachang{
+.nhanxetkhachhang{
     height: 570px;
     position: relative;
     display: flex;
@@ -149,7 +174,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
+
 .myclient-object{
     margin-top: 25px;
     padding: 10px;
@@ -221,10 +249,12 @@
 }
 #client{
     z-index: 100;
+
+}
+.slideleft{
     animation-name: slide-left;
     animation-duration: 1s;
     transition: 0.5s;
-
 }
 
 @keyframes slide-left {
@@ -245,10 +275,10 @@
     left: 0;
     right: 0;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.72;
 } 
 .mo{
-    opacity: 0.6;
+    opacity: 0.65;
 }
 .formtuvan form{
     width: 80%;
@@ -258,6 +288,24 @@
     height: 100px;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 8px;
+    border: 5px;
+    border-color: #355370;
+}
+#modaljs{
+    display: none;
+}
+.modal-backdrop{
+    z-index: 0;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
+.modalcuatoi{
+    color: black;
 }
 /* end khach hang */
 .uytin{
@@ -325,6 +373,40 @@
     align-items: center;
 }
 /* end dich vu */
+.hide{
+    opacity: 0;
+}
+
+
+/* ======================================
+=============================================== */
+/* add animation */
+.mycart-animation{
+    animation: zoomBig 0.5s forwards;
+}
+@keyframes zoomBig {
+    from{
+        scale: 2;
+    }to{
+        scale: 1;
+    }
+}
+.mycartbody{
+    overflow: hidden;
+
+}
+.mycart img{
+    transition: 0.4s;
+}
+.mycart:hover img{
+    transition: 0.4s;
+    scale: 1.5;
+}
+
+.box-content p span:last-child:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
 
 
 

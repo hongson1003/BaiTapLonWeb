@@ -20,15 +20,15 @@
       <div class="header-header">
         <p>Chào mừng quý khách đến với Bảo Sơn Coffee</p>
         <p>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-solid fa-envelope"></i>
+          <i title="Facebook" class="fa-brands fa-facebook-f"></i>
+          <i title="instagram" class="fa-brands fa-instagram"></i>
+          <i title="Twitter" class="fa-brands fa-twitter"></i>
+          <i title="Gmail" class="fa-solid fa-envelope"></i>
         </p>
       </div>
 
       <div class="header-banner">
-        <div class="header-banner__logo">
+        <div title="Cà phê số 1 Việt Nam" id="logo" class="header-banner__logo">
           <img class="logo" src="../image/logo-removebg-preview.png" alt="">
         </div>
 
@@ -45,10 +45,8 @@
             <p>0986.989.626</p>
           </div>
 
-          <div class="cart">
-            <p>0 đ</p>
+          <div title="Vui lòng đăng ký tư vấn" class="cart">
             <i class="fa-solid fa-cart-shopping"></i>
-
           </div>
         </div>
 
@@ -62,12 +60,12 @@
 
     <div class="navs-slide">
       <div class="navs-slide-header">
-        <p><a href="">TRANG CHỦ</a></p>
-        <p><a href="GioiThieu.html">GIỚI THIỆU</a></p>
-        <p><a href="CuaHang.html">CỬA HÀNG</a></p>
-        <p><a href="Khachsan.html">DỊCH VỤ NHÀ HÀNG – KHÁCH SẠN</a></p>
-        <p><a href="Tintuc.html">TIN TỨC</a></p>
-        <p><a href="LienHe.html">LIÊN HỆ</a></p>
+          <p><a href="">TRANG CHỦ</a></p>
+          <p><a href="GioiThieu.html">GIỚI THIỆU</a></p>
+          <p><a href="CuaHang.html">CỬA HÀNG</a></p>
+          <p><a href="Khachsan.html">DỊCH VỤ NHÀ HÀNG – KHÁCH SẠN</a></p>
+          <p><a href="Tintuc.html">TIN TỨC</a></p>
+          <p><a href="LienHe.html">LIÊN HỆ</a></p>
       </div>
       <div id="myCarousel" class="carousel slide slideshow" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -114,7 +112,9 @@
         <div class="line-item"></div>
       </div>
       <p>Cà phê ABC được thành lập năm 2015 – Sử dụng công thức rang xay và chế biến gia truyền – Mang đến cho người tiêu dùng một loại cà phê với hương vị và chất lượng tuyệt hảo.</p>
-      <button class="btn btn-primary mt-4">ĐĂNG KÝ TƯ VẤN</button>
+      <button id="register" class="btn btn-primary mt-4">
+        <a href="#nhanxet">ĐĂNG KÝ TƯ VẤN</a>
+      </button>
     </div>
     <!-- end -->
 
@@ -177,7 +177,7 @@
 
     <!-- My products -->
     <div class="myproducts">
-      <h4>CÁC SẢN PHẨM CỦA CHÚNG TÔI</h4>
+      <h4>CÁC SẢN PHẨM TỐT NHẤT CỦA CHÚNG TÔI</h4>
       <div class="line-logo line-logo-products">
         <div class="line-item"></div>
         <i class="fa-solid fa-circle"></i>        
@@ -188,32 +188,37 @@
       <div class="myproducts-content">
 
         <!-- product item -->
-        <div class="card mycart m-2">
-          <div class="card-body">
+        <div class="card mycart m-2 product-item">
+          <div class="card-body mycartbody">
             <img src="../image/img1a.jpg" alt="">
           </div>
           <div class="card-footer d-flex justify-content-center">
               <p>Cà phê Arabica</p>
+              <span>:</span>
+
               <p>150,000 đ</p>
           </div>
         </div>
 
-        <div class="card mycart m-2">
-          <div class="card-body">
+        <div class="card mycart m-2 product-item">
+          <div class="card-body mycartbody">
             <img src="../image/imga6.jpg" alt="">
           </div>
           <div class="card-footer d-flex justify-content-center">
               <p>Cà phê Arabica</p>
+              <span>:</span>
+
               <p>150,000 đ</p>
           </div>
         </div>
 
-        <div class="card mycart m-2">
-          <div class="card-body">
+        <div class="card mycart m-2 product-item">
+          <div class="card-body mycartbody">
             <img src="../image/imga7a.jpg" alt="">
           </div>
           <div class="card-footer d-flex justify-content-center">
               <p>Cà phê Arabica</p>
+              <span>:</span>
               <p>150,000 đ</p>
           </div>
         </div>
@@ -223,7 +228,7 @@
     </div>
     <!-- end -->
 
-    <div class="nhanxetkhachang">
+    <div id="nhanxet" class="nhanxetkhachhang">
       <div class="myclient">
         <h3>KHÁCH HÀNG NHẬN XÉT VỀ CHÚNG TÔI</h3>
         <div class="line-logo line-logo-products">
@@ -234,7 +239,7 @@
           <div class="line-item"></div>
         </div>
         <!-- Su dung js de thuc hien cac slide object -->
-        <div id="client" class="myclient-object">
+        <div id="client" class="myclient-object slideleft">
           <div class="avatar">
             <img id="avt" src="" alt="">
           </div>
@@ -255,7 +260,7 @@
         </div>
       </div>
         
-      <div class="formtuvan">
+      <div id="formregister" class="formtuvan">
         <h4>ĐĂNG KÝ TƯ VẤN</h4>
         <div class="line-logo mo">
           <div class="line-item"></div>
@@ -264,24 +269,46 @@
           <i class="fa-solid fa-circle"></i>        
           <div class="line-item"></div>
         </div>
-        <form>
+        <form id="formdangkytuvan" class="form-dangky">
           <div class="form-group">
             <label for="inputName">Họ và tên</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Nhập họ và tên">
+            <input type="text" name="username" class="form-control" id="inputName" placeholder="Nhập họ và tên" required>
           </div>
           <div class="form-group">
             <label for="inputEmail">Địa chỉ email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Nhập địa chỉ email">
+            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Nhập địa chỉ email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
           </div>
           <div class="form-group">
-            <label for="phonenumber">Mật khẩu</label>
-            <input type="text" class="form-control" id="phonenumber" placeholder="Nhập số điện thoại">
+            <label for="phonenumber">Số điện thoại</label>
+            <input autocomplete="on" type="tel" name="phone" class="form-control" id="phonenumber" placeholder="Nhập số điện thoại" required pattern="^0\d{9,10}$">
           </div>
           <div class="form-group">
-            <label for="textuvan">Bạn cần chúng tôi giúp đỡ</label>
-            <textarea class="texttuvan" name="cantuvan" id="textuvan" cols="30" rows="10">Bạn cần tư vấn gì...</textarea>
+            <label for="texttuvan">Bạn cần chúng tôi giúp đỡ</label>
+            <textarea class="texttuvan" name="cantuvan" id="texttuvan" cols="30" rows="10" required>Bạn cần tư vấn gì (tối thiểu 20 kí tự)................................</textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Đăng ký</button>
+          <button id="dangky" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" >Đăng ký</button>
+          <!-- Modal -->
+          <!-- Button để mở modal -->
+          <!-- Modal -->
+          <div class="modal fade modalcuatoi" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div id="modaljs" class="modal-content mymodal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title mymodaltitle" id="myModalLabel" style="font-weight: 700;"></h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span id="xclose" aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body textmodal"></div>
+                <div class="modal-footer">
+                  <button id="btnclose" type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
         </form> 
       </div>
 
@@ -371,8 +398,8 @@
 
       <div class="about-box about-box3">
         <p>FANPAGE FACEBOOK</p>
-        <div class="video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/fPhzPqgYNWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="myvideo">
+          <video muted poster="../video/caphec++.jpg" controls src="../video/songuyento.mp4"></video>
         </div>
       </div>
 
@@ -382,10 +409,14 @@
     <footer class="myfooter">
       <p>Copyright 2023 © Thiết kế website Hà Nội bởi Topweb.com.vn</p>
     </footer>
-
+    <div class="scrollontop">
+      <a href="#logo">
+        <img src="../image/muitenlen.png" alt="">
+      </a>
+    </div>
 
   </div>
   <script src="../js/trangChu.js"></script>
-
+  <script src="../js/base.js"></script>
 </body>
 </html>
