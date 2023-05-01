@@ -1,23 +1,4 @@
 /* Carousel and navbar */
-.navs-slide{
-    height: 500px;
-}
-.navs-slide-header{
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #5A280E;
-    padding: 0px 18%;
-
-}
-
-.navs-slide-header p a{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 750;
-    font-size: 14px;
-}
 .slideshow, .slideshow img{
     height: 450px;
 }
@@ -27,6 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 6%;
+    box-sizing: border-box;
 }
 .dangkytuvan h3{
     font-size: 20px;
@@ -37,6 +20,7 @@
     font-weight: 700;
     color: #5A280E;
     font-size: 14px;
+    text-align: center;
 }
 #register a{
     display: block;
@@ -59,10 +43,10 @@
 }
 .reason-content{
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    top: 10px;
+    left: 20px;
+    bottom: 10px;
+    right: 20px;
     z-index: 10;
     color: #ffffff;
     display: flex;
@@ -96,7 +80,7 @@
 
 /* myproduct */
 .myproducts{
-    padding: 30px;
+    padding: 20px 20px;
     box-sizing: border-box;
     background-image: linear-gradient(110deg, #B56B2A, #DDB367);
     display: flex;
@@ -105,6 +89,7 @@
 }
 .myproducts h4{
     font-weight: 800;
+    text-align: center;
 }
 .myproducts-content{
     margin: 0 auto;
@@ -113,12 +98,12 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
 }
 .product-item p{
     font-weight: 700;
 }
-.product-item p:last-child{
+.coin{
     font-weight: 700;
     color: brown;
 }
@@ -144,6 +129,8 @@
 
 /* Nhan xet của khách hàng */
 .nhanxetkhachhang{
+    padding: 20px;
+    box-sizing: border-box;
     height: 570px;
     position: relative;
     display: flex;
@@ -152,11 +139,10 @@
     background-image: url(../image/coffeebg.jpg);
 }
 .myclient{
-    left: 0;
-    position: absolute;
     width: 50%;
     height: 100%;
-    padding: 30px 10px 10px;
+    padding: 20px 40px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,9 +150,6 @@
     z-index: 1;
 }
 .formtuvan{
-    position: absolute;
-    right: 0;
-    top: 0;
     width: 50%;
     height: 100%;
     z-index: 100;
@@ -174,8 +157,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px 40px;
     box-sizing: border-box;
+}
+.myclient h3{
+    text-align: center;
 }
 
 .myclient-object{
@@ -183,7 +169,6 @@
     padding: 10px;
     box-sizing: border-box;
     width: 70%;
-    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,6 +178,9 @@
     width: 70px;
     height: 70px;
     border-radius: 36px;
+}
+#ten{
+    text-align: center;
 }
 .avatar img{
     width: 100%;
@@ -213,9 +201,8 @@
 }
 .cicle-group{
     position: absolute;
-
     display: flex;
-    bottom: 10px;
+    bottom: -30px;
 
 }
 .cicle-item{
@@ -315,12 +302,21 @@
     background-size: cover;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box-content{
     width: 600px;
     height: 200px;
-    margin-left: 25%;
-    margin-top: 3%;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box-content p{
+    text-align: center;
 }
 .box-content p:first-child{
     font-size: 26px;
@@ -347,11 +343,13 @@
 }
 /* end uy tin */
 .dichvu{
-    height: 120px;
+    height: 100px;
     background-color: #5A280E;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
 } 
 .dichvu-item{
     width: 250px;
@@ -364,13 +362,13 @@
     height: 60px;
 } 
 .dichvu-item div{
+    margin-left: 4px;
     font-size: 13px;
     font-weight: 670;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 /* end dich vu */
 .hide{
@@ -407,6 +405,75 @@
     font-weight: 700;
     cursor: pointer;
 }
+
+
+/* =============== responsive for home */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .nhanxetkhachhang{
+        height: 120%;
+    }
+    .myclient h3{
+        font-size: 20px;
+    }
+
+    #comments{
+        font-size: 15px;
+    }
+    .dichvu-item p{
+        font-size: 10px;
+    }
+    .dichvu-item img{
+        width: 30px;
+        height: 30px;
+    }
+
+
+}
+
+
+@media (max-width: 767px) {
+    .reason-content{
+        font-size: 13px;
+        text-align: center;
+    }
+    .product-item{
+        width: 45%;
+        height: 250px;
+    }
+    .product-item p{
+        font-size: 12px;
+    }
+    .nhanxetkhachhang{
+        flex-direction: column;
+        height: 1200px;
+    }
+    .myclient{
+        width: 100%;
+    }
+    .formtuvan{
+        width: 100%;
+    }
+    .mymodal-content{
+        width: 80%;
+        height: 50%;
+        margin: auto;
+    }
+    .dichvu-item p{
+        font-size: 8px;
+    }
+    .dichvu-item img{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+
+
+
+
 
 
 

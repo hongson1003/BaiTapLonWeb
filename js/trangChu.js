@@ -14,7 +14,8 @@ function renderSlide(avatar, ten, comments, client, circleleft, circleright){
     if (n==client.length || n>client.length)
         n=0;
     if (n<0)
-        n=0;
+        n=client.length-1;
+;
     avatar.src = client[n].avatar;
     ten.innerHTML = client[n].name;
     comments.innerHTML = client[n].comments;
@@ -166,7 +167,7 @@ btndangky.addEventListener('click', function(event){
         mymodaltitle.classList.add('error');
         if (inputName.checkValidity()==false){
             var pname = document.createElement('p');
-            pname.innerText = 'Bạn đã nhập sai trường họ tên!';
+            pname.innerText = 'Bạn đã nhập sai họ tên!';
             textmodal.appendChild(pname);
         }
         if (inputEmail.checkValidity()==false){

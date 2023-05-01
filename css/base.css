@@ -96,13 +96,14 @@ p{
     font-weight: 700;
 }
 .cart{
-    width: 70px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border: #3498DB solid 1px ;
-    border-radius: 40px;
+    border-radius: 26px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: 0.4s;
 }
 .header-banner__cart img, .header-banner__cart div{
     margin: 0px 2px;
@@ -120,19 +121,25 @@ p{
 .navs-slide{
     height: 500px;
 }
-.navs-slide p{
-    transition: 0.3s;
-}
 
 .navs-slide-header{
     height: 50px;
+    background-color: #5A280E;
+
+}
+.navs-slide-header div{
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #5A280E;
-    padding: 0px 18%;
-
+    box-sizing: border-box;
+    margin: 0px auto
+}
+.navs-slide-header p{
+    transition: 0.3s;
+    box-sizing: border-box;
+    margin: 0px 15px;
 }
 
 .navs-slide-header p a{
@@ -181,11 +188,13 @@ p{
 /* css for about and footer */
 
 .about{
-    height: 245px;
+    /* height: 245px; */
     background-color: #F4F4F4;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .about-box{
     margin-top: 50px;
@@ -249,10 +258,39 @@ p{
 
 }
 .myvideo video{
-    height: 120px;
+    height: 110px;
 }
 .show{
     display: block;
+}
+
+/* viet chung class cho san phẩm, product item */
+.mycart{
+    position: relative;
+    overflow: hidden;
+}
+.item-new{
+    position: absolute;
+    right: -76px;
+    top: -10px;
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.item-new4{
+    background-color: #3498DB;
+}
+.item-new p{
+    color: #ffffff;
+}
+.item-new2{
+    background-color: darkmagenta;
 }
 
 
@@ -262,13 +300,13 @@ p{
 ============================================================================== */
 
 /* Tạo hover cho cả trang web */
-.navs-slide-header p:hover{
+.navs-slide-header div p:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     background-color: #E67E22;
-    padding: 10px;
+    padding: 0px 10px;
+    height: 100%;
     transition: 0.3s;
     border-top: 3px solid slateblue;
     border-bottom: 3px solid slateblue;
@@ -276,6 +314,7 @@ p{
 #logo:hover{
     transition: 0.6s;
     scale: 1.2;
+
     cursor: pointer;
 }
 
@@ -299,6 +338,7 @@ html {
 }
 
 .cart:hover{
+    transition: 0.4s;
     background-color: greenyellow;
 }
 
@@ -306,3 +346,57 @@ html {
 
 
 
+/* =============== responsive for toan bo trang web */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-banner__introduce{
+        display: none;
+       
+}
+
+    .about-box p{
+        font-size: 12px;
+    }
+    .about-box p span{
+        font-size: 12px;
+
+    }
+
+
+
+
+}
+@media (max-width: 767px) {
+    .header-banner__introduce{
+        display: none;
+    }
+    .navs-slide-header div p a{
+        font-size: 10px;
+    }
+    .navs-slide-header div p:hover{
+        padding: 0px 0px;
+        box-sizing: border-box;
+        height: 50%;
+    }
+    .about{
+        flex-wrap: wrap;
+    }
+    .about-box{
+        align-items: center;
+    }
+    .about-box p{
+        font-size: 10px;
+    }
+    .about-box p span{
+        font-size: 10px;
+
+    }
+    .myfooter{
+        padding: 0 40px;
+    }
+    .myfooter p{
+        font-size: 10px;
+    }
+
+
+
+}
