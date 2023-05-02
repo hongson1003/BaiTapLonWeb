@@ -3,18 +3,19 @@
     height: 450px;
 }
 .dangkytuvan{
-    height: 275px;
+    /* height: 275px; */
     background-image: linear-gradient(90deg, #FFBE88, #D6C7A8);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 6%;
+    padding: 30px 20px;
     box-sizing: border-box;
 }
 .dangkytuvan h3{
     font-size: 20px;
     color: #5A280E;
     font-weight: 800;
+    text-align: center;
 }
 .dangkytuvan p:nth-child(2),.dangkytuvan p:nth-child(4) {
     font-weight: 700;
@@ -40,6 +41,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .reason-content{
     position: absolute;
@@ -53,6 +56,12 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+}
+.reason-content p{
+    text-align: center;
+}
+.reason-content h4{
+    text-align: center;
 }
 .line-logo div{
     background-color: #ffffff;
@@ -131,7 +140,7 @@
 .nhanxetkhachhang{
     padding: 20px;
     box-sizing: border-box;
-    height: 570px;
+    height: 600px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -217,10 +226,10 @@
     height: 100%;
 }
 .dieukhien-left{
-    left: 10px;
+    left: -20px;
 }
 .dieukhien-right{
-    right: 10px;
+    right: -20px;
 }
 .dieukhien-right a i{
     transform: rotate(180deg);  
@@ -329,9 +338,12 @@
     font-weight: 600;
     font-style: italic;
 }
-.box-content p:last-child span:first-child{
+.hotline{
     color: #34495E;
     font-weight: 600;
+}
+.box-content p:last-child{
+    color: green;
 }
 .box-content p:last-child span:last-child{
     color: #E74C3C;
@@ -340,6 +352,9 @@
 }
 .box-content p{
     margin: 20px 0px;
+}
+.hotline{
+    font-weight: 700;
 }
 /* end uy tin */
 .dichvu{
@@ -427,12 +442,21 @@
         width: 30px;
         height: 30px;
     }
+    .hotline{
+        color: green;
+    }
 
 
 }
 
 
-@media (max-width: 767px) {
+@media (min-width: 395px) and (max-width: 767px) {
+    .slideshow, .slideshow img{
+        height: 300px;
+    }
+    .navs-slide{
+        height: calc(100% - 300px);
+    }
     .reason-content{
         font-size: 13px;
         text-align: center;
@@ -446,7 +470,8 @@
     }
     .nhanxetkhachhang{
         flex-direction: column;
-        height: 1200px;
+        justify-content: center;
+        height: 1400px;
     }
     .myclient{
         width: 100%;
@@ -466,6 +491,67 @@
         width: 30px;
         height: 30px;
     }
+    .hotline{
+        color: green;
+    }
+
+}
+@media (max-width: 394px) {
+    .slideshow, .slideshow img{
+        height: 300px;
+    }
+    .navs-slide{
+        height: calc(100% - 300px);
+    }
+    .reason-item p{
+        font-size: 10px;
+    
+    
+    }
+    .nhanxetkhachhang{
+        flex-direction: column;
+        justify-content: center;
+        height: 1400px;
+    }
+    .myclient{
+        width: 100%;
+    }
+    .formtuvan{
+        width: 100%;
+    }
+    .hotline{
+        color: green;
+    }
+    .box-content p:nth-child(2){
+        color: green;
+        font-weight: 800;
+    }
+    .dichvu-item p{
+        font-size: 6px;
+    }
+    .dichvu-item img{
+        width: 20px;
+        height: 20px;
+    }
+    .scrollontop{
+        width: 30px;
+        height: 30px;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .scrollontop img{
+        width: 30px;
+        height: 30px;
+        border-radius: 16px;
+    }
+    .mymodal-content{
+        width: 70%;
+        height: 40%;
+        margin: auto;
+    }
+
 
 }
 
