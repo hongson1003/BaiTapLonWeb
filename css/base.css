@@ -26,6 +26,7 @@ p{
     padding: 0px 12%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 2px;
     background-color: #F5F5F5;
     color: #777777;
@@ -275,7 +276,6 @@ p{
     top: -10px;
     width: 200px;
     height: 80px;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,8 +283,14 @@ p{
     padding-top: 20px;
     box-sizing: border-box;
 }
-.item-new4{
+.New{
+    background-color: red;
+}
+.Sheller{
     background-color: #3498DB;
+}
+.Discount{
+    background-color: #C9BADA;
 }
 .item-new p{
     color: #ffffff;
@@ -396,7 +402,35 @@ html {
     .myfooter p{
         font-size: 10px;
     }
+    .header-header p:first-child{
+        font-size: 9px;
+    }
+    .header-header p:last-child i{
+        font-size: 12px;
+    }
+    .logo{
+        scale: 0.9;
+    }
+    .header-banner__cart{
+        scale: 0.8;
+    }
 
 
-
+    @media (max-width: 394px) {
+        .header-header p:first-child{
+            font-size: 6px;
+        }
+        .header-header p:last-child i{
+            font-size: 10px;
+        }
+        .logo{
+            scale: 0.8;
+        }
+        .header-banner__cart{
+            scale: 0.7;
+        }
+        .header-banner__cart__phone{
+            display: none;
+        }
+    }
 }

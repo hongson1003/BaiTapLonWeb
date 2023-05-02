@@ -8,13 +8,13 @@
 }
 .main-contact{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 30px;
     box-sizing: border-box;
 }
 /* liên hệ */
 .main-lienhe{
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -32,8 +32,12 @@
     margin-top: 20px;
     font-size: 20px;
 }
-.main-adress{
-    position: relative;
+.main-address{
+    width: 60%;
+}
+.main-address img{
+    width: 100%;
+    height: 100%;
 }
 /* =========================== */
 /* tin tức */
@@ -73,18 +77,20 @@
     width: 270px;
 }
 
-.main-tieude-img{
-    margin-left: 0px;
-}
+/* Khách sạn */
+
 .main-tieude-img img{
     width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    height: 100%;
 }
 .main-noidung{
-    margin-top: 20px;
-    margin-left: 75px;
+    margin: auto 40px;
     font-size: 20px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.main-noidung details p{
+    text-indent: 50px;
 }
 /* ================================== */
 /* Cua hang */
@@ -149,4 +155,62 @@
 }
 .main-chonsanpham span,option{
     font-size: 20px;
+}
+
+
+
+/* responsive for khach san */
+@media (min-width: 395px) and (max-width: 794px){
+    details p{
+        font-size: 16px;
+    }
+    summary b i {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1030px) {
+    .main-contact{
+        flex-direction: column;
+    }
+    .main-lienhe{
+        width: 100%;
+    }
+    .main-lienhe h2,.main-lienhe h3 {
+        text-align: center;
+    }
+    .main-lienhe p{
+        text-align: center;
+    }
+    .main-address{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 394px){
+    .main-noidung{
+        margin: 20px;
+    }
+    summary b i {
+        font-size: 16px;
+    }
+    details p{
+        font-size: 12px;
+    }
+    .main-contact{
+        padding: 15px;
+    }
+    .main-lienhe h2{
+        font-size: 20px;
+    }
+    .main-lienhe h3{
+        font-size: 15px;
+    }
+
 }

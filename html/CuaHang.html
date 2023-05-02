@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/shop.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -90,81 +91,15 @@
                 </div>
             </div>
             <!-- danh sách các sản phẩm -->
-            <div class="main-sanpham">
-                <div class="main-sanpham-chitiet">
-                    <img src="../image/img1a.jpg" alt="">
-                    <div class="main-sanpham-giathanh">
-                        <p>Cà phê Arabica</p>
-                        <p  class="color">150.000 đ</p>
-                    </div>
-                </div>
-                <div class="main-sanpham-chitiet">
-                    <img src="../image/img2a.jpg" alt="">
-                    <div class="main-sanpham-giathanh">
-                        <p>Cà phê rang xay 01 [1kg]</p>
-                        <p class="color">350.000 đ</p>
-                    </div>
-                </div>
-                <div class="main-sanpham-chitiet">
-                    <img src="../image/imga3a.jpg" alt="">
-                    <div class="main-sanpham-giathanh">
-                        <p>Cà phê rang xay 02 [1kg]</p>
-                        <p class="color">250.000 đ</p>
-                    </div>
-                </div>
-                <div class="main-sanpham-chitiet">
-                    <img src="../image/imga4a.jpg" alt="">
-                    <div class="main-sanpham-giathanh">
-                        <p>Cà phê Robusta</p>
-                        <p class="color">250.000 đ</p>
-                    </div>
-                </div>
-                <div class="main-sanpham-chitiet">
-                    <img src="../image/imga5a.jpg" alt="">
-                    <div class="main-sanpham-giathanh">
-                        <p>Cà phê Moka</p>
-                        <p class="color">275.000 đ</p>
-                    </div>
-                </div>
-                <div class="main-sanpham-chitiet">
-                    <img src="../image/imga6a.jpg" alt="">
-                    <div class="main-sanpham-giathanh">
-                        <p>Cà phê Culi</p>
-                        <p class="color">400.000 đ</p>
-                    </div>
-                </div>
-                <div class="main-sanpham-chitiet">
-                    <img src="../image/imga7a.jpg" alt="">
-                    <div class="main-sanpham-giathanh">
-                        <p>Cà phê Cherry</p>
-                        <p class="color">370.000 đ</p>
-                    </div>
-                </div>
-                <div class="main-sanpham-chitiet">
-                    <img src="../image/imga8a.jpg" alt="">
-                    <div class="main-sanpham-giathanh">
-                        <p>Cà phê Capuchino</p>
-                        <p class="color">300.000 đ</p>
-                    </div>
-                </div>
-                <div class="main-sanpham-chitiet">
-                    <img src="../image/img9a1.jpg" alt="">
-                    <div class="main-sanpham-giathanh">
-                        <p>Cà phê Kopi Luwak (Cafe Chồn)</p>
-                        <p class="color">550.000 đ</p>
-                    </div>
-                </div>
-                <!-- end danh sách các sản phẩm -->
+            <div class="coffee-products">
+              <div id="listproducts" class="myproducts ">
+              </div>
+            </div>
 
-
-
-
-
-                
             </div>
 
             <!-- Xem them -->
-            <div class=" btn btn-primary main-xemthem">
+            <div id="btnxemthem" class=" btn btn-primary main-xemthem">
                 <div>
                     <span><b><i>Xem thêm</i></b></span>
                 </div>
@@ -210,8 +145,8 @@
     
           <div class="about-box about-box3">
             <p>FANPAGE FACEBOOK</p>
-            <div class="video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/fPhzPqgYNWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="myvideo">
+              <video muted poster="../video/caphec++.jpg" controls src="../video/songuyento.mp4"></video>
             </div>
           </div>
     
@@ -228,6 +163,6 @@
         </div>
       </div>
       <script src="../js/base.js"></script>
-
+      <script src="../js/shop.js"></script>
 </body>
 </html>

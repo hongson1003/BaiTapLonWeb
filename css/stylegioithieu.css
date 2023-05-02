@@ -16,6 +16,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 30px;
+    box-sizing: border-box;
 }
 
 .main-content__title span:first-child{
@@ -26,26 +28,71 @@
 }
 .title--gioithieu{
     margin: 20px;
+    font-weight: 800;
+    font-family: 'Dancing Script', cursive;
 
 }
 /* CSS =width 100% cho text */
 .main-content-text{
-    padding: 10px 100px;
-    box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.history{
+    text-indent: 60px;
+    font-size: 15px;
+}
+.main-content-text ol{
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+.main-content-text ol ol{
+    list-style-type: circle;
+}
+.main-content-text ol ol li{
+    color: #7DC2AC;
+}
 
 .main-content-text__vechungtoi{
-    font-size: 25px;
+    font-size: 50px;
     color: #5A280E;
     text-align: left;
     margin: 20px 0px;
+    font-family: 'Rampart One', cursive;
+
+
 }
 /* CSS for p label */
 .label-text{
     font-weight: 800;
     font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================== responsive */
+@media (max-width: 394px) {
+    .main-background{
+        height: 250px;
+    }
+    .main-content{
+        padding: 10px;
+    }
+    .main-content-text__vechungtoi{
+        font-size: 28px;
+    }
+
+
 }
