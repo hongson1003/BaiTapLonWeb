@@ -116,6 +116,9 @@
     font-weight: 700;
     color: brown;
 }
+.product-item{
+    background-image: linear-gradient(0, #659999, #f4791f);
+}
 
 .line-logo-products div{
     background-color: grey;
@@ -494,7 +497,6 @@
     .hotline{
         color: green;
     }
-
 }
 @media (max-width: 394px) {
     .slideshow, .slideshow img{

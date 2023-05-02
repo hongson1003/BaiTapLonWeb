@@ -103,8 +103,7 @@
     margin-top: 10px;
 }
 .img-title-sale img{
-    width: 300px;
-    height: 80px;
+    width: 60%;
 }
 .main-sanpham{
     display: grid;

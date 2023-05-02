@@ -347,13 +347,34 @@ html {
     transition: 0.4s;
     background-color: greenyellow;
 }
+/* class used to hover */
+.New--red{
+    border: 10px solid red;
+    box-sizing: border-box;
+}
+.Discount--tim{
+    border: 10px solid #C9BADA;
+    box-sizing: border-box;
+
+}
+.Sheller--blue{
+    border: 10px solid #3498DB;
+    box-sizing: border-box;
+
+}
+.none{
+    border: 10px solid grey;
+    box-sizing: border-box;
+
+}
+
 
 
 
 
 
 /* =============== responsive for toan bo trang web */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 823px) and (max-width: 991px) {
     .header-banner__introduce{
         display: none;
        
@@ -371,7 +392,7 @@ html {
 
 
 }
-@media (max-width: 767px) {
+@media (max-width: 820px) {
     .header-banner__introduce{
         display: none;
     }
