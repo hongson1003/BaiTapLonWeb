@@ -497,6 +497,15 @@
     .hotline{
         color: green;
     }
+
+}
+@media (max-width: 800px) {
+    .reason-choose > div > .line-logo{
+        display: none;
+    }
+    .reason-content h4{
+        padding-bottom: 20px;
+    }
 }
 @media (max-width: 394px) {
     .slideshow, .slideshow img{
