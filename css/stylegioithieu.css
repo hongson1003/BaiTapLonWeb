@@ -1,10 +1,52 @@
 .main-background{
     height: 450px;
-    background-image: url('../image/gioithieu.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    background-image: radial-gradient(circle, #fceabb, #f8b500);
+    border-bottom: 50px solid green;
 }
+.adson{
+    position: relative;
+    animation: left-to-right 0.5s ease forwards;
+}
+.main-background div img{
+    width: 100%;
+}
+.adbao{
+    position: relative;
+    animation: right-to-left 0.3s ease forwards;
+}
+.adson-name, .adbao-name{
+    position: absolute;
+    top: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.adbao-name h3 , .adson-name h3{
+    font-weight: 900;
+    color: green;
+    font-size: 30px;
 
+}
+.adson-name{
+    left: -2%;
+}
+.adbao-name{
+    right: -2%;
+}
+@keyframes left-to-right {
+    from{
+        left: -100%;
+    }to{
+        left: 0;
+    }
+}
+@keyframes right-to-left {
+    from{
+        right: -100%;
+    }to{
+        right: 0;
+    }
+}
 /* CSS for title gioi thieu */
 .main-content__title{
     padding-top: 40px;
@@ -29,7 +71,10 @@
 .title--gioithieu{
     margin: 20px;
     font-weight: 800;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+
+
+
 
 }
 /* CSS =width 100% cho text */
@@ -55,13 +100,11 @@
 }
 
 .main-content-text__vechungtoi{
-    font-size: 50px;
+    font-size: 40px;
     color: #5A280E;
     text-align: left;
     margin: 20px 0px;
     font-family: 'Rampart One', cursive;
-
-
 }
 /* CSS for p label */
 .label-text{
@@ -83,16 +126,49 @@
 
 
 /* ====================================== responsive */
-@media (max-width: 394px) {
+@media (max-width: 960px) {
     .main-background{
-        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 900px;
+        align-items: center;
+        border: none;
     }
-    .main-content{
-        padding: 10px;
+    .adson, .adbao{
+        width: 50%;
+    }
+    .adson h3, .adbao h3{
+        display: none;
+    }
+}
+@media (max-width: 960px) {
+    .main-background{
+        height: 900px;
     }
     .main-content-text__vechungtoi{
         font-size: 28px;
     }
+    .main-content-text__vechungtoi{
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+@media (max-width: 392px) {
+    .main-background{
+        height: 450px;
+    }
+    .main-content{
+        padding: 10px;
+    }
+    .title--gioithieu{
+        font-size: 20px;
+    }
+
 
 
 }

@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 .coffee-products-cart{
     overflow: hidden;
@@ -31,6 +32,44 @@
 }
 .main-xemthem{
     margin-bottom: 20px;
+}
+.mywrapper {
+    padding-top: 10px;
+    box-sizing: border-box;
+    top: -10px;
+    position: relative;
+}
+.listproducts-content{
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: green;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-Product p:first-child{
+    font-size: 30px;
+    color: aqua;
+    font-weight: 870;
+    font-family: 'Babylonica', cursive;
+
+}
+.content-Product p:nth-child(2){
+    font-size: 27px;
+    font-weight: 900;
+    color: #333;
+    text-indent: 50px;
+}
+.content-Product ul li{
+    margin: 10px;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 
@@ -62,7 +101,4 @@
 }
 @media (max-width: 422px){
 
-    .coffee-products-cart{
-
-    }
 }

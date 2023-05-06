@@ -113,7 +113,9 @@ var list = [
     },
     
 ];
-
+// gán id
+for (var i=0;i<list.length;i++)
+    list[i].id = i+1;
 // ==================
 
 
@@ -135,6 +137,7 @@ function renderProduct(myproducts, object){
     cart.style.height = '320px';
     cart.classList.add('card');
     cart.classList.add('coffee-products-cart');
+    cart.id = `product-${object.id}`;
     var backgroundImageValue = "linear-gradient(0, #c6ffdd, #fbd786, #f7797d)";
 
     cart.style.backgroundImage = backgroundImageValue
@@ -151,7 +154,8 @@ function renderProduct(myproducts, object){
         cart.style.transition = '0.5s';
 
         cart.classList.add(strs);
-    })
+})
+
     cart.addEventListener('mouseout', function(){
         var strs = '';
         if (object.status=='New')
@@ -167,6 +171,7 @@ function renderProduct(myproducts, object){
         cart.classList.remove(strs);
     })
     myproducts.appendChild(cart);
+    detailProduct();
 }
 
 function inProducts(){
@@ -203,6 +208,268 @@ select.addEventListener('change', function(){
         if (list[i].status == value || list[i].source == value)
             renderProduct(myproducts, list[i]);
     }   
-
 })
+var listContent = [
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    {
+        ul: `
+            <li>Màu đậm, vị cà phê đậm, đắng mạnh, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, vị cà phê mộc mạc, đắng vừa, nguyên chất 100%</li>
+            <li>Màu nâu đỏ, mùi thơm quyến rũ, nguyên chất 100%</li>
+            <li>Màu nâu đậm, vị cà phê đậm, thơm vừa, đắng dịu, nguyên chất 100%</li>
+            <li>Vị thanh toát, mùi thơm tương tự như cà phê pha máy, chua nhẹ, hậu giữ lại lâu trong miệng</li>
+            <li>Chuyên dùng để pha cafe sữa vị béo thơm nồng quyến rũ đặc trưng</li>
+        `
+    },
+    
+
+];
+
+// Viet js ap dung chi tiet san pham
+function showChiTiet(objects){
+    var block = document.getElementsByClassName('listproducts-content')[0];
+    for (var i=0;i<objects.length;i++){
+        objects[i].addEventListener('click', function(){
+            var strcart = this.outerHTML;
+            block.innerHTML = strcart + block.innerHTML;
+            var coffee = block.getElementsByClassName('coffee-products-cart')[0];
+            var id =''+ coffee.getAttribute('id');
+            console.log(id)
+            var index = id.length-1;
+            var idLast = parseInt(id[index--]);
+            while(id[index]>='0' && id[index]<='9')
+                idLast = (parseInt(id[index--]))*10 + idLast;
+            idLast--;
+            block.innerHTML = strcart + `
+            
+                <div class="content-Product">
+                    <p>${list[idLast].name}</p>
+                    <p>${list[idLast].coin}</p>
+                    <ul>
+                        ${listContent[idLast].ul}
+                    </ul>
+                </div>
+            `   + `
+                <div>
+                    <button id="content-close" class="btn btn-danger">&times;</button>
+                </div>
+            `;
+
+
+            block.style.display = 'flex';
+
+            var productClose = document.getElementById('content-close');
+            productClose.addEventListener('click', function(){
+                // block.innerHTML = '';
+                block.style.display = 'none';
+
+          });
+        })
+
+    }
+    
+
+        
+}
+
+function detailProduct(){
+    var xemThem = document.getElementById('btnxemthem');
+    var productList = document.querySelectorAll('.coffee-products-cart');
+    showChiTiet(productList);
+    xemThem.addEventListener('click', function(){
+        productList = document.querySelectorAll('.coffee-products-cart');
+        showChiTiet(productList);
+    });
+    
+}
+    detailProduct();
 

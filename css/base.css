@@ -453,5 +453,13 @@ html {
         .header-banner__cart__phone{
             display: none;
         }
+        .about-box p:first-child{
+            font-size: 14px !important;
+        }
+        .about-box p{
+            font-size: 8px !important;
+        }
+
+
     }
 }

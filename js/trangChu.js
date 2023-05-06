@@ -188,6 +188,18 @@ btndangky.addEventListener('click', function(event){
     }
 })
 
+
+// Write js for onclick to cua hang
+chon1ItemShopBatKy();
+function chon1ItemShopBatKy(){
+    var itemShops = document.querySelectorAll('.mycart');
+    for (var i = 0;i<itemShops.length;i++){
+        itemShops[i].addEventListener('click', function(){
+            window.location.href = '../html/Cuahang.html';
+        })
+    }
+}
+
   
   
 

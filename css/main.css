@@ -39,6 +39,24 @@
     width: 100%;
     height: 100%;
 }
+.main-lienhe a::after{
+    content: "Nhấp vào đường link này" " " attr(href);
+}
+.main-lienhe a{
+    text-decoration: none;
+    color: grey;
+    transition: 0.3s;
+
+}
+.main-lienhe a:hover{
+    transition: 0.3s;
+    color: blue;
+}
+
+
+
+
+
 /* =========================== */
 /* tin tức */
 .main-tintuc{
@@ -159,14 +177,7 @@
 
 
 /* responsive for khach san */
-@media (min-width: 395px) and (max-width: 794px){
-    details p{
-        font-size: 16px;
-    }
-    summary b i {
-        font-size: 18px;
-    }
-}
+
 @media (max-width: 1030px) {
     .main-contact{
         flex-direction: column;
@@ -188,11 +199,22 @@
         margin-top: 20px;
     }
 }
+@media (min-width: 465px) and (max-width: 794px){
+    details p{
+        font-size: 16px;
+    }
+    summary b i {
+        font-size: 18px;
+    }
+    .main-lienhe p{
+        font-size: 13px;
+    }
+}
 
 
 
 
-@media (max-width: 394px){
+@media (max-width: 464px){
     .main-noidung{
         margin: 20px;
     }
@@ -210,6 +232,9 @@
     }
     .main-lienhe h3{
         font-size: 15px;
+    }
+    .main-lienhe p{
+        font-size: 10px;
     }
 
 }
