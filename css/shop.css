@@ -1,7 +1,10 @@
+.main{
+    position: relative;
+}
 .coffee-products{
-    /* height: 1000px; */
     padding: 20px 30px;
     box-sizing: border-box;
+    /* position: relative; */
 }
 .myproducts{
     width: 100%;
@@ -43,13 +46,13 @@
     z-index: 1;
     display: none;
     position: fixed;
-    top: 120px;
+    top: 10%;
     left: 0;
     right: 0;
-    height: 500px;
+    bottom: 10%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: green;
+    background-image: linear-gradient(45deg,  #108dc7, #ef8e38);
     align-items: center;
     justify-content: space-around;
 }
@@ -63,13 +66,24 @@
 .content-Product p:nth-child(2){
     font-size: 27px;
     font-weight: 900;
-    color: #333;
+    color: #ef8e38;
     text-indent: 50px;
 }
 .content-Product ul li{
     margin: 10px;
     color: #ffffff;
     font-size: 16px;
+}
+.opacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    opacity: 0.9;
+    display: none;
+    z-index: 10;
 }
 
 
@@ -85,6 +99,27 @@
     .coffee-products{
         padding: 0;
     }
+    .listproducts-content{
+        flex-direction: column;
+        align-items: center;
+        height: calc(100% - 30%)
+    }
+    .listproducts-content ul li{
+        font-size: 10px !important;
+    }
+    .listproducts-content div:last-child{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .listproducts-content div:first-child{
+    }
+    .content-Product p{
+        text-align: center;
+    }
+    
+
+
 }
 @media (max-width: 540px) {
     .coffee-products-cart{
@@ -92,12 +127,17 @@
         height: 150px !important;
         font-size: 8px;
         text-align: center;
+        scale: 1.2;
     }
     .item-new{
         scale: 0.5;
         right: -90px !important;
         top: -28px !important;
     }
+    .coffee-products-cart div:nth-child(2) p{
+        font-size: 5px;
+    }
+
 }
 @media (max-width: 422px){
 
