@@ -411,11 +411,12 @@ var listContent = [
         `
     },
     
-
 ];
 
 // Viet js ap dung chi tiet san pham
 function showChiTiet(objects){
+    var opacity = document.getElementsByClassName('opacity')[0];
+
     var block = document.getElementsByClassName('listproducts-content')[0];
     for (var i=0;i<objects.length;i++){
         objects[i].addEventListener('click', function(){
@@ -423,14 +424,12 @@ function showChiTiet(objects){
             block.innerHTML = strcart + block.innerHTML;
             var coffee = block.getElementsByClassName('coffee-products-cart')[0];
             var id =''+ coffee.getAttribute('id');
-            console.log(id)
             var index = id.length-1;
             var idLast = parseInt(id[index--]);
             while(id[index]>='0' && id[index]<='9')
                 idLast = (parseInt(id[index--]))*10 + idLast;
             idLast--;
             block.innerHTML = strcart + `
-            
                 <div class="content-Product">
                     <p>${list[idLast].name}</p>
                     <p>${list[idLast].coin}</p>
@@ -440,25 +439,32 @@ function showChiTiet(objects){
                 </div>
             `   + `
                 <div>
-                    <button id="content-close" class="btn btn-danger">&times;</button>
+                    <button id="closetimes" class="btn btn-danger">&times;</button>
                 </div>
             `;
 
-
+            var itemNews = block.getElementsByClassName('item-new');
+            for (var i=0;i<itemNews.length;i++){
+                itemNews[i].innerHTML = '';
+                itemNews[i].classList.remove('item-new');
+            }
             block.style.display = 'flex';
+            block.style.zIndex = 100;
+            opacity.classList.add('show');
 
-            var productClose = document.getElementById('content-close');
+            var productClose = document.getElementById('closetimes');
             productClose.addEventListener('click', function(){
-                // block.innerHTML = '';
+                console.log('la vay ta')
+                block.innerHTML = '';
                 block.style.display = 'none';
-
-          });
+                opacity.classList.remove('show');
+         });
         })
-
     }
-    
 
-        
+
+
+
 }
 
 function detailProduct(){

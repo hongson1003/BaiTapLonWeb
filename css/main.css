@@ -3,6 +3,7 @@
     padding: 0px;
     border: none;
 }
+
 .mymain{
     width: 100%;
 }
@@ -60,18 +61,19 @@
 /* =========================== */
 /* tin tức */
 .main-tintuc{
-    display: grid;
-    margin: 30px auto;
-    grid-template-areas: "A B C " ;
-    grid-template-rows: "D";
-    row-gap: 30px;
-    width: fit-content;
-    column-gap: 40px;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
   
 }
 .main-tintuc-noidung{
+    width: 270px;
+    height: 370px;
     border: 3px solid aliceblue;
-    width: fit-content;
+    margin: 20px;
 }
 .noidung{
     margin-top: 10px;
@@ -92,8 +94,25 @@
     margin-bottom: 15px;
 }
 .main-tintuc-noidung img{
-    width: 270px;
+    width: 100%;
 }
+
+.mymain-chuchay{
+    height: 50px;
+    background-color: #80808045;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: #E03D76;
+    font-weight: 700;
+}
+.noidung h4{
+    font-size: 15px;
+}
+.noidung p{
+    font-size: 12px;
+}
+
+
 
 /* Khách sạn */
 
@@ -207,8 +226,16 @@
         font-size: 18px;
     }
     .main-lienhe p{
+        padding: 0;
         font-size: 13px;
     }
+    .main-tintuc-noidung{
+        width: 200px;
+    }
+
+
+
+
 }
 
 
@@ -234,6 +261,17 @@
         font-size: 15px;
     }
     .main-lienhe p{
+        font-size: 10px;
+    }
+    .main-tintuc-noidung{
+        width: 100px;
+        height: 250px;
+    }
+    .noidung p{
+        margin: 5px;
+        font-size: 8px;
+    }
+    .noidung h4{
         font-size: 10px;
     }
 
