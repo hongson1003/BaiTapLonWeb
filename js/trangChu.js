@@ -195,7 +195,7 @@ function chon1ItemShopBatKy(){
     var itemShops = document.querySelectorAll('.mycart');
     for (var i = 0;i<itemShops.length;i++){
         itemShops[i].addEventListener('click', function(){
-            window.location.href = '../html/Cuahang.html';
+            window.location.href = '../Cuahang.html';
         })
     }
 }
