@@ -51,22 +51,22 @@ function nhanxetcuakhachhang(){
     var client = [
         {
             name: 'Nguyễn Hồng Sơn',
-            avatar: '../image/avatardoraemon.jpg',
+            avatar: 'image/avatardoraemon.jpg',
             comments: 'Cà phê chỉ có một màu đen quen thuộc nhưng tùy tâm trạng mà người uống có thể cảm nhận nó ngọt hay đắng.'
         },
         {
             name: 'Võ Trần Quốc Bảo',
-            avatar: '../image/quocbao.jpg',
+            avatar: 'image/quocbao.jpg',
             comments: 'Mỗi đồ uống sẽ phù hợp với tâm trạng khác nhau, trà cho thanh thản, rượu cho nỗi đau và cà phê cho nỗi buồn.'
         },
         {
             name: 'Nguyễn Thành Tài',
-            avatar: '../image/thanhtai.jpg',
+            avatar: 'image/thanhtai.jpg',
             comments: 'Thêm chút đường cà phê có ngọt? Thêm chút tình mình có thuộc về nhau?'
         },
         {
             name: 'Võ Thanh Tuấn', 
-            avatar: '../image/thanhtuan.jpg',
+            avatar: 'image/thanhtuan.jpg',
             comments: 'Ta tìm gì trong một tách cà phê: một chút tỉnh táo, một chút lãng du nghênh ngang ngồi lại bất động giữa phố thị cứ vồn vã trôi đi, tìm giây phút lặng yên cạnh ai đó, cái thở dài trước ngày cứ trôi qua hay một nỗi nhớ ngọt đắng vơi đầy.'
         }
     ] ;
@@ -195,7 +195,7 @@ function chon1ItemShopBatKy(){
     var itemShops = document.querySelectorAll('.mycart');
     for (var i = 0;i<itemShops.length;i++){
         itemShops[i].addEventListener('click', function(){
-            window.location.href = '../Cuahang.html';
+            window.location.href = 'Cuahang.html';
         })
     }
 }
