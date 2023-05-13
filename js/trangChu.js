@@ -33,7 +33,7 @@ function nhanxetcuakhachhang(){
     var avatar = document.getElementById('avt');
     var ten = document.getElementById('ten');
     var danhgia = document.getElementById('danhgia');
-    danhgia.src = '../image/5Start-removebg-preview.png';
+    danhgia.src = 'image/5Start-removebg-preview.png';
     var cicleLeft = document.getElementById('control-left');
     var cicleRight = document.getElementById('control-right');
     var controlTrai = document.getElementById('control-trai');
@@ -195,7 +195,7 @@ function chon1ItemShopBatKy(){
     var itemShops = document.querySelectorAll('.mycart');
     for (var i = 0;i<itemShops.length;i++){
         itemShops[i].addEventListener('click', function(){
-            window.location.href = 'Cuahang.html';
+            window.location.href = '../Cuahang.html';
         })
     }
 }
