@@ -86,11 +86,9 @@
     z-index: 10;
 }
 .coffee-products-cart img{
-    height: 95%;
+    height: 100%;
 }
-.mycardbody{
-    padding: 10px;
-}
+
 
 
 
@@ -141,6 +139,9 @@
     }
     .coffee-products-cart div:nth-child(2) p{
         font-size: 5px;
+    }
+    .mycardbody{
+        padding: 0px;
     }
 
 }
