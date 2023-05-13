@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Bảo Sơn</title>
+    <link rel="icon" href="image/logobrwoser (2).png" type="image/x-icon">
 
-    <link rel="icon" href="../image/logobrwoser (2).png" type="image/x-icon">
-
-
-    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
-    <script src="../js/jquery-3.6.4.min.js"></script>
-    <script src="../css/bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/main.css">
+
 </head>
 <body>
     <div class="container-fluid main">
@@ -49,6 +49,7 @@
               </div>
     
               <div class="cart">
+                <p>0 đ</p>
                 <i class="fa-solid fa-cart-shopping"></i>
     
               </div>
@@ -59,53 +60,65 @@
           
         </header>
         <!-- End header -->
-    
-        <!-- Nav & carousel slideshow -->
-
+        <!-- nav slide -->
         <div class="navs-slide-header">
           <div>
-            <p><a href="TrangChu.html">TRANG CHỦ</a></p>
+            <p><a href="index.html">TRANG CHỦ</a></p>
             <p><a href="GioiThieu.html">GIỚI THIỆU</a></p>
-            <p><a href="CuaHang.html">CỬA HÀNG</a></p>
+            <p><a href="">CỬA HÀNG</a></p>
             <p><a href="Khachsan.html">DỊCH VỤ NHÀ HÀNG – KHÁCH SẠN</a></p>
             <p><a href="Tintuc.html">TIN TỨC</a></p>
-            <p><a href="">LIÊN HỆ</a></p>
+            <p><a href="LienHe.html">LIÊN HỆ</a></p>
           </div>
         </div>
 
-        <!-- Main -->
-        <div class="mymain">
-            <!-- Lien he,diachi -->
-            <div class="main-contact">
-                <div class="main-lienhe">
-                    <h2 >LIÊN HỆ</h2>
-                    <h3>CÔNG TY TNHH SƠN BẢO COFFEE</h3>
-                    <p>Địa chỉ : 86C Nguyễn Thái Sơn Gò Vấp Tp.HCM</p>
-                    <p>
-                        <span>Điện thoại :</span>
-                        <span>0935.201.508</span>
-                    </p>
-                    <p>
-                      <span>Facebook: </span>
-                      <a href="https://www.facebook.com/profile.php?id=100015652741892"></a>
-                    </p>
-                    <p>
-                      <span>Youtube: </span>
-                      <a href="https://www.youtube.com/channel/UCwHfYzhMV34mQyNVj5mnu2g"></a>
-                    </p>
+        <div class="opacity"></div>
+        <!-- end nav-slide -->
+        <!-- main-->
+        <div class="mywrapper">
+          <div class="main-title">
+            <div class="img-title-sale">
+                <img src="../image/img-title.jpg" alt="">
+            </div>
+            <!-- chọn sản phẩm -->
+            <div class="main-chonsanpham">
+                <span  style="color :rgb(129,122,122)" >Xem 4 sản phẩm</span>
+                <select name="" id="myselect" class="choice" >
+                    <option value="Best Sheller">Đang bán chạy</option>
+                    <option value="Discount">Đang có khuyến mãi</option>
+                    <option value="New">Hàng mới</option>
+                    <option value="Uc">Coffee Úc</option>
+                    <option value="Trung Nguyen">Coffee Trung Nguyên</option>
+                </select>
+            </div>
+          </div>
+          <!-- danh sách các sản phẩm -->
+          <div class="coffee-products">
+            <div class="listproducts-content">
+                <button id="content-close" class="btn btn-danger">&times;</button>
+            </div>
+            <div id="listproducts" class="myproducts">
+              
+            </div>
+
+            <!-- Xem them -->
+            <div id="btnxemthem" class=" btn btn-primary main-xemthem">
+                <div>
+                    <span><b><i>Xem thêm</i></b></span>
                 </div>
-                <div class="main-address">
-                    <img src="../image/bando.jpg" alt="">
+                <div>
+                    <img src="../image/MuiTenCon.webp" alt="" width="50px" height="30px">
                 </div>
             </div>
+
+            <!-- <div class="opacity"></div> -->
+        <!-- end main -->           
         </div>
-    
-           
-    
-        
-    
+
+  
+      
         <!-- about -->
-        <div class="about">
+                        <div class="about">
           <div class="about-box">
               <p>CÔNG TY CÀ PHÊ ABC</p>
               <p>
@@ -149,13 +162,11 @@
         </footer>
         <div class="scrollontop">
           <a href="#logo">
-            <img src="../image/muitenlen.png" alt="">
+            <img src="image/muitenlen.png" alt="">
           </a>
         </div>
-    
       </div>
-      <script src="../js/base.js"></script>
-
+      <script src=".js/base.js"></script>
+      <script src="js/shop.js"></script>
 </body>
 </html>
-
