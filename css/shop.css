@@ -85,7 +85,12 @@
     display: none;
     z-index: 10;
 }
-
+.coffee-products-cart img{
+    height: 95%;
+}
+.mycardbody{
+    padding: 10px;
+}
 
 
 
